@@ -1,0 +1,28 @@
+<!--
+  Generated template for the AlbumListPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Meus albuns</ion-title>
+    <ion-buttons right>
+      <button ion-button icon-only navPush="AlbumCreatePage">
+        <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-buttons>
+
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let albumName of listAlbum.list">
+      {{albumName}}
+    </ion-item>
+  </ion-list>
+</ion-content>
